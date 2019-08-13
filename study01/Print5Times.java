@@ -1,4 +1,4 @@
-package step1;
+package study01;
 import java.util.Scanner ;
 
 public class Print5Times {
@@ -15,16 +15,17 @@ public class Print5Times {
 			System.out.println("진행 1     스톱 0");
 			int flag2 = scan.nextInt();
 			
-	
-			if(flag2 == 0)
-			{
-				break;
-				
+			switch(flag2) {
+			case 0:System.out.println("시스템종료");
+			return;
+			case 1: System.out.println("계속진행");
+			break;
+			
+			
 			}
 			
-			
 		}
-		System.out.print("while종료");
+		//System.out.print("while종료");
 		
 
 	}
