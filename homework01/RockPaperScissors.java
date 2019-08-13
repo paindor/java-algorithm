@@ -27,8 +27,7 @@ public class RockPaperScissors {
 		
 		switch(player) {
 		case 1: pl = "가위";
-		switch(com)
-		{
+		switch(com){
 		case 1:  comStr = "가위" ; isWin = "무승부";break;
 		case 2:  comStr = "바위" ; isWin = "너의 패배";break;
 		case 3:  comStr = "보" ; isWin = "당신의 승리";break;
@@ -39,8 +38,7 @@ public class RockPaperScissors {
 			break;
 		case 2:	
 			pl = "바위";
-			switch(com)
-			{
+			switch(com){
 			case 1:  comStr = "가위" ; isWin = "당신의 승리";break;
 			case 2:  comStr = "바위" ; isWin = "무승부";break;
 			case 3:  comStr = "보" ; isWin = "너의 패배";break;
@@ -50,8 +48,7 @@ public class RockPaperScissors {
 			break;
 		case 3:	
 			pl = "보";
-			switch(com)
-			{
+			switch(com){
 			case 1:  comStr = "가위" ; isWin = "너의 패배";break;
 			case 2:  comStr = "바위" ; isWin = "당신의 승리";break;
 			case 3:  comStr = "보" ; isWin = "무승부";break;
