@@ -61,7 +61,7 @@ public class HowMuch {
 			System.out.printf("총 %d원 입니다." , result);
 			int dc = result / 10;
 			result -= dc; 
-			//System.out.printf("10% 할인되어서 %d원입니다." , result);
+			//System.out.printf("10% 할인되어서 %d원입니다." , result);//포맷오류가 발생합니다.			
 			System.out.printf("할인되어서 %d원입니다. \n" , result);
 			System.out.printf("1. 계속    2. 종료 ");
 			over = scan.nextInt();

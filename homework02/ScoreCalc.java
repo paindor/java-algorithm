@@ -60,10 +60,6 @@ public class ScoreCalc {
 			numbers[count-1] = input;
 			
 			
-			
-			
-			
-			
 		}
 		//총합, 평균계산
 		int sum = 0, avg = 0;
