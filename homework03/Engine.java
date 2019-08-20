@@ -110,6 +110,17 @@ public class Engine {
 				System.out.println(result);
 				break;
 			case 8:   // rangking
+				double[] d = new double[3];
+				System.out.println("기록측정");
+				
+				for(int i = 0 ; i < 3; i++) {
+					System.out.println("기록입력");
+					d[i] = scan.nextDouble();
+					
+				}
+				
+				result = st.getRank(d);
+				
 				System.out.println(result);
 				break;
 			case 9:   //report card

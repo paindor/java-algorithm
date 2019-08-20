@@ -139,7 +139,7 @@ public class Student {
 				name, scores[0],scores[1],scores[2],scores[3],scores[4]);
 		return result;
 	}
-	public String getRank(String[] pl , double[] records) {
+	public String getRank( double[] records) {
 		for(int i = 0; i < records.length; i++) {
 			for(int j = 0 ; j < records.length -1; j++) {
 				if(records[j] > records[j+1]) {
@@ -147,9 +147,6 @@ public class Student {
 					records[j] = records[j+1];
 					records[j+1] = tempd;
 					
-					String tempS = pl[j];
-					pl[j] = pl[j+1];
-					pl[j+1] = tempS;
 					
 					
 				}
@@ -157,7 +154,7 @@ public class Student {
 		}
 		String result ="";
 		for(int i = 0 ;i < 3; i++) {
-			 result += String.format("%d등  %s 기록 : %.1f" , i+1, pl[i] , records[i]);
+			 result += String.format("%d등  기록 : %.1f" , i+1,  records[i]);
 		}
 		
 		return result;
