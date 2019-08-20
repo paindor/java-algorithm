@@ -160,21 +160,61 @@ public class Student {
 		
 		return result;
 	}
-	public String getReportCard() {
-		String result ="";
+	public String getReportCard(String name, int[] scores) {
+		String result = "";
+		for(int i = 0 ; i < 3; i++) {
+			scores[3] += scores[i];
+			
+		}
+		String pass = "";
+		scores[4] = scores[3]/ 3;
+		if(scores[4] >= 90) {
+			pass = "장학생";
+		}else if(scores[4] >= 70 && scores[4] <90) {
+			pass = "합격";
+		}else {
+			pass = "불합격";
+			
+			
+		}
+		
+		result = String.format("성명    국어    영어    수학    총점    평균    합격여부\n ========================================================\n%s   %d   %d   %d   %d   %d   %s ",
+				name, scores[0],scores[1],scores[2],scores[3],scores[4]);
 		return result;
+		
+		
+		
 	}
 	
-	public String getScoreCalc() {
+	public String getScoreCalc(int[] scores) {
+		int sum = 0, avg = 0;
 		String result ="";
+		for(int i = 0 ;i < scores.length; i++) {
+			if(i == scores.length-1) {
+				result += String.format("%d = ", scores[i]);
+			}else {
+				result += String.format("%d + ", scores[i]);
+			}
+			sum += scores[i];
+		}
+		avg = sum/scores.length;
+		result += String.format("%d 이고, 평균은 %d 입니다 ",sum, avg );
 		return result;
 	}
-	public String getTax() {
+	public String getTax(String name , int income) {
 		String result ="";
+		double taxRate = 9.7;
+		double tax = income * taxRate *0.01;
+		result = String.format("연봉 %d만원을 받는 당신의 세금은 %.1f만원이다", income, tax);
+		
 		return result;
 	}
-	public String getTimeCalc() {
+	public String getTimeCalc(int time) {
 		String result ="";
+		int m = time/ 60;
+		int h = (time/60)/ 60;
+		int s = time%60;
+		result = String.format("%d시간 %d분 %초", h, m, s);
 		return result;
 	}
 	
