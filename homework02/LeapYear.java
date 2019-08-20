@@ -1,29 +1,5 @@
-<<<<<<< HEAD
-package homework02;
 
-import java.util.Scanner;
 
-public class LeapYear {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner scan = new Scanner(System.in);
-		int input =0;
-		String month ="";
-		
-		System.out.println("몇년 ?");
-		input = scan.nextInt();
-		int result = input %4;
-		
-	
-		
-		System.out.printf("%d년은 %s입니다.");
-	
-
-	}
-
-}
-=======
 package homework02;
 /*연도를 넣으면 윤년인지 아닌지를 판단하는 프로그램이 필요합니다.
 입력창에 2000 이라고 넣으면 2000년은 윤년입니다. 이렇게 출력하는 어플 말입니다.
@@ -74,4 +50,3 @@ public class LeapYear {
 	}
 
 }
->>>>>>> edf155587dc3f98ab857f16dfbb8e7df07d876bf
