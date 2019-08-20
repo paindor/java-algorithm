@@ -23,7 +23,6 @@ public class Tax {
 		income = scan.nextInt();
 		double tax = (double)income * (taxRate / 100);
 		//double taxResult = Math.round((tax*10 ) / 10.0);
-		//Math.round메소드를 사용하면 소숫점이 0으로 바뀌고 56.00000이런식으로 나옵니다.
 		
 		
 				
