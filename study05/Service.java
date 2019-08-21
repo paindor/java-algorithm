@@ -31,7 +31,8 @@ public class Service {
 	public String getReportCard(Member member) {
 		String result = "";
 		String pass = "";
-		int sum = member.getEng() + member.getKor()+ member.getMath();
+		int sum = 0;
+		sum = member.getKor() + member.getEng() + member.getMath();
 		int avg = sum / 3;
 		if(avg >= 90) {
 			pass = "장학생";
@@ -41,7 +42,7 @@ public class Service {
 			pass = "불합격";
 		}
 		result = String.format("이름    국어    영어    수학    총점    평균    합격여부\n%s   %d   %d   %d   %d   %d   %s", 
-				member.getName(), member.getKor(), member.getEng(), member.getMath(), sum, avg, pass);
+				member.getName(), member.getKor(), member.getEng(),member.getMath(), sum, avg, pass);
 		
 		return result;
 		

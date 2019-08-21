@@ -4,13 +4,14 @@ public class Member {
 	
 	private String name, id , pw,  ssn ,blood ;
 	private double height, weight;
-	private int kor, eng, math , salary;
+	private int kor, eng , math; 
+	private int salary;
 	
 
 	public void setName(String name) {
 		this.name = name;
 	}
-
+	
 	public String getName() {
 		return this.name;
 	}
@@ -63,8 +64,10 @@ public class Member {
 		this.weight = weight;
 	}
 	
+	
+
 	public int getKor() {
-		return this.kor;
+		return kor;
 	}
 
 	public void setKor(int kor) {
@@ -72,7 +75,7 @@ public class Member {
 	}
 
 	public int getEng() {
-		return this.eng;
+		return eng;
 	}
 
 	public void setEng(int eng) {
@@ -80,7 +83,7 @@ public class Member {
 	}
 
 	public int getMath() {
-		return this.math;
+		return math;
 	}
 
 	public void setMath(int math) {
